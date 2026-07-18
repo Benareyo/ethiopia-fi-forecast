@@ -8,3 +8,4 @@ streamlit
 plotly
 jupyter
 pytest
+openpyxl
