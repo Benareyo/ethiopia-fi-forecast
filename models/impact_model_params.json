@@ -1,0 +1,12 @@
+{
+  "magnitude_pp_refined": {
+    "negligible": 0.73,
+    "low": 2.18,
+    "medium": 5.82,
+    "high": 11.63
+  },
+  "scurve_steepness": 0.15,
+  "overstatement_ratio": 5.82974612300161,
+  "calibration_factor": 1.4538284633538274,
+  "calibration_source": "M-Pesa launch -> ACC_MM_ACCOUNT (2021: 4.7%, 2024: 9.45%)"
+}
