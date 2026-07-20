@@ -174,6 +174,9 @@ elif page == "Trends":
                       (obs["year"] >= date_range[0]) & (obs["year"] <= date_range[1])]
             if "gender" in sub.columns:
                 sub = sub[(sub["gender"] == "all") | (sub["gender"].isna())]
+            if "location" in sub.columns:
+                national = sub[(sub["location"] == "national") | (sub["location"].isna())]
+                sub = national if len(national) > 0 else sub
             sub = sub.sort_values("year")
             if len(sub):
                 fig.add_trace(go.Scatter(x=sub["year"], y=sub["value_numeric"],
